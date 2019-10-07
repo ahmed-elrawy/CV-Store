@@ -1,0 +1,25 @@
+#home-section {
+    background: url(../../../assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-attachment: fixed;
+    min-height: 725px;
+}
+
+  #home-section .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 725px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+.home-inner {
+    padding-top: 150px
+}
+
+#home-section .card {
+    width: 300px;   
+    margin-bottom:20px;
+}
