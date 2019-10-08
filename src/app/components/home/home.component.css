@@ -20,6 +20,16 @@
 }
 
 #home-section .card {
+    
     width: 300px;   
     margin-bottom:20px;
+}
+mat-form-field {
+  margin-right: 12px;
+}
+
+.search {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  height: 70px;
 }

@@ -11,9 +11,16 @@ import { NaveComponent } from './components/nave/nave.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; //npm install --save @ng-bootstrap/ng-bootstrap
 import { MaterialModule } from './material/material.module';
+import { RouterModule, Routes } from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'companyForm', component: ComponyFormComponent },
+  { path: 'emploteeForm', component: EmployeeFormComponent },
+  { path: 'CVPage', component: CVPageComponent },
 
 
-
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +34,8 @@ import { MaterialModule } from './material/material.module';
     BrowserModule,
     NgbModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
