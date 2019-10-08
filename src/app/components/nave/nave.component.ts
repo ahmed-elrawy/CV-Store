@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MatDialog, MatDialogConfig } from "@angular/material";
+import { LoginComponent } from '../login/login.component';
 @Component({
   selector: 'app-nave',
   templateUrl: './nave.component.html',
@@ -8,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class NaveComponent implements OnInit {
   isCollapsed = true;
 
-  constructor() { }
+  constructor(private dialog: MatDialog) { }
 
   ngOnInit() {
   }
-
+  onCreate() {
+    this.dialog.open(LoginComponent)
+  }
 }
